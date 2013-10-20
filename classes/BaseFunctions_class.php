@@ -9,15 +9,15 @@ abstract class BaseFunctions {
     function makeShot()
     {
         if ($this->is_load == 1){
-            echo "piu-piu";
+            echo "piu-piu <br />";
         } else {
-            echo "not loaded";
+            echo "not loaded <br />";
             $this->reload();
         }
     }
 
     function makeAim()
     {
-        echo "target acquired";
+        echo "target acquired <br />";
     }
 }

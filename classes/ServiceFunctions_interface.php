@@ -2,5 +2,5 @@
 
 interface ServiceFunctions
 {
-    public function setReloadTime();
+    public function setReloadTime($time);
 }

@@ -7,15 +7,15 @@ class Howitzer extends BaseFunctions implements ServiceFunctions {
 
     var $reloadtime;
 
-    public function setReloadTime()
+    public function setReloadTime($time)
     {
-        $this->reloadtime = 120;
+        $this->reloadtime = $time;
     }
 
     public function reload()
     {
-        echo "charge loaded";
-        echo "shell loaded";
+        echo "shell loaded <br />";
+        echo "charge loaded <br />";
         $this->is_load = 1;
     }
 
