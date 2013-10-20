@@ -2,7 +2,7 @@
 
 abstract class BaseFunctions {
 
-    var $is_load;
+    var $is_load = 0;
 
     abstract function reload();
 
