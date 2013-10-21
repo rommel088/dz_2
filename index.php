@@ -1,5 +1,4 @@
 <?php
-//require_once("classes/Howitzer_class.php");
 
 function __autoload($name)
 {
