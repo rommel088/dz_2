@@ -1,14 +1,12 @@
 <?php
 
-require_once("BaseFunctions_class.php");
 require_once("ServiceFunctions_interface.php");
 require_once("SelfPropelled_interface.php");
 
 class SpCannon extends BaseFunctions implements ServiceFunctions, SelfPropelled
 {
-    var $reloadtime;
-    var $engine_power;
-
+    private $reloadtime;
+    private $enginePower;
 
     public function setReloadTime($time)
     {
@@ -16,18 +14,16 @@ class SpCannon extends BaseFunctions implements ServiceFunctions, SelfPropelled
     }
     public function setEngine($hp)
     {
-        $this->engine_power = $hp;
+        $this->enginePower = $hp;
     }
     public function reload()
     {
-        echo "shot loaded <br />";
-        $this->is_load = 1;
+        $this->isLoad = 1;
+        return "shot loaded";
     }
     public function moveTo($position)
     {
-        echo "moving to ".$position." <br />";
-        echo "on position <br />";
+        return "moving to ".$position." <br /> on position";
     }
-
 
 }

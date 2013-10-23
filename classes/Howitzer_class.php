@@ -1,11 +1,10 @@
 <?php
 
-require_once("BaseFunctions_class.php");
 require_once("ServiceFunctions_interface.php");
 
 class Howitzer extends BaseFunctions implements ServiceFunctions {
 
-    var $reloadtime;
+    private $reloadtime;
 
     public function setReloadTime($time)
     {
@@ -14,9 +13,8 @@ class Howitzer extends BaseFunctions implements ServiceFunctions {
 
     public function reload()
     {
-        echo "shell loaded <br />";
-        echo "charge loaded <br />";
-        $this->is_load = 1;
+        $this->isLoad = 1;
+        return "shell loaded <br />charge loaded";
     }
 
 

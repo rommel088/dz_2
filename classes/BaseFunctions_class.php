@@ -1,23 +1,24 @@
 <?php
 
-abstract class BaseFunctions {
+abstract class BaseFunctions
+{
 
-    var $is_load = 0;
+    protected $isLoad = 0;
 
-    abstract function reload();
+    abstract public function reload();
 
-    function makeShot()
+    public function makeShot()
     {
-        if ($this->is_load == 1){
-            echo "piu-piu <br />";
+        if ($this->isLoad == 1){
+            return "piu-piu";
         } else {
-            echo "not loaded <br />";
             $this->reload();
+            return "not loaded";
         }
     }
 
-    function makeAim()
+    public function makeAim()
     {
-        echo "target acquired <br />";
+        return "target acquired";
     }
 }
