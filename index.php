@@ -2,7 +2,7 @@
 
 function __autoload($name)
 {
-    require_once ("classes/".$name."_class.php");
+    require_once ("classes/".$name.".php");
 }
 
 $m30 = new Howitzer();
