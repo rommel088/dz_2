@@ -1,5 +1,6 @@
 <?php
 require_once("Autoload.php");
+require_once("vendor/autoload.php");
 spl_autoload_register('autoload');
 require_once("apps/Controller.php");
 
