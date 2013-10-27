@@ -1,4 +1,5 @@
 <?php
+namespace lib\interfaces;
 
 interface ServiceFunctions
 {

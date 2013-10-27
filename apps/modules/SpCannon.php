@@ -1,7 +1,10 @@
 <?php
+namespace apps\modules;
 
-require_once("ServiceFunctions_interface.php");
-require_once("SelfPropelled_interface.php");
+use \lib\classes\BaseFunctions;
+use \lib\interfaces\ServiceFunctions;
+use \lib\interfaces\SelfPropelled;
+
 
 class SpCannon extends BaseFunctions implements ServiceFunctions, SelfPropelled
 {

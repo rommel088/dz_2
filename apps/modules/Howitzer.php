@@ -1,6 +1,8 @@
 <?php
+namespace apps\modules;
 
-require_once("ServiceFunctions_interface.php");
+use \lib\classes\BaseFunctions;
+use \lib\interfaces\ServiceFunctions;
 
 class Howitzer extends BaseFunctions implements ServiceFunctions {
 

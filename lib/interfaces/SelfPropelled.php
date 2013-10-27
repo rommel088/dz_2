@@ -1,4 +1,6 @@
 <?php
+namespace lib\interfaces;
+
 interface SelfPropelled
 {
     public function setEngine($hp);
