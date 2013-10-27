@@ -13,10 +13,15 @@ use \apps\modules\SpCannon;
         $twig = new Twig_Environment($loader);
 
         if (count($request) == 0) {
-            echo $twig->render('index.html', array('name' => 'anonymous'));
+            $content = $twig->render('default.html', array('name' => 'anonymous'));
+//            echo $twig->render('index.html', array('name' => 'anonymous'));
         } else {
-            echo $twig->render('index.html', array('name' => $request['name']));
+            print_r($request);
+            $content="some artsystem";
+//            echo $twig->render('index.html', array('name' => $request['name']));
         }
+
+        echo $twig->render('index.html', array('content' => $content));
         return $request;
     }
 
