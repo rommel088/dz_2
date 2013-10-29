@@ -1,0 +1,30 @@
+<ul>
+    <li>Name <input id="name" type="text" value="{{name}}" /><button class="input">Ok</button></li>
+    <li>Loadtime <input id="loadtime" type="text" value="{{loadTime}}" /><button class="input">Ok</button></li>
+    <li>Position <input id="position" type="text" value="{{position}}" /><button class="input">Ok</button></li>
+    <li>
+        {% if load == "" %}
+        discharged <button id="make_load">Load</button>
+        <input id="is_load" type="checkbox" style="display: none;">
+        {% else %}
+        {{load}}
+        <input id="is_load" type="checkbox" checked="checked" style="display: none;">
+        {% endif %}
+    </li>
+    <li>
+        {% if aim == "" %}
+        no target <button id="make_aim">Aim</button>
+        <input id="is_aim" type="checkbox" style="display: none;">
+        {% else %}
+        {{aim}}
+        <input id="is_aim" type="checkbox" checked style="display: none;">
+        {% endif %}
+    </li>
+    <li>
+        {% if load == "" %}
+        Not ready!
+        {% else %}
+        Ready! <button id="fire">Fire</button>
+        {% endif %}
+    </li>
+</ul>

@@ -8,13 +8,9 @@ use \lib\interfaces\SelfPropelled;
 
 class SpCannon extends BaseFunctions implements ServiceFunctions, SelfPropelled
 {
-    private $reloadtime;
-    private $enginePower;
+    private $enginePower = 0;
+    private $position;
 
-    public function setReloadTime($time)
-    {
-        $this->reloadtime = $time;
-    }
     public function setEngine($hp)
     {
         $this->enginePower = $hp;
@@ -26,7 +22,9 @@ class SpCannon extends BaseFunctions implements ServiceFunctions, SelfPropelled
     }
     public function moveTo($position)
     {
-        return "moving to ".$position." <br /> on position";
+        $this->position = $position;
+        if ($position == "") return false;
+        return $this->position;
     }
 
 }
