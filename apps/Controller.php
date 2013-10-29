@@ -1,5 +1,4 @@
 <?php
-//namespace apps;
 
 use \apps\modules\Howitzer;
 use \apps\modules\SpCannon;
@@ -135,3 +134,5 @@ $response->setStatusCode(200);
 $response->headers->set('Content-Type', 'text/html');
 
 $response->send();
+
+//да да, знаю, что говнокод :D
